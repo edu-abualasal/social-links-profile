@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: normal;
+  background-color: var(--grey-900);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  min-width: 320px;
+  max-width: 380px;
+  margin: 24px;
+  background-color: var(--grey-800);
+  flex: 1 1 auto;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.avatar-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.profile-links li a {
+  background-color: var(--grey-700);
+  color: var(--white);
+  width: 100%;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-links li:hover a {
+  color: var(--grey-900);
+  background-color: var(--green);
+}
+
+.name {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.location {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
