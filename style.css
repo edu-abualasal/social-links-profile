@@ -84,7 +84,8 @@ main {
   font-weight: 700;
 }
 
-.profile-links li:hover a {
+.profile-links li:hover a,
+.profile-links li a:focus {
   color: var(--grey-900);
   background-color: var(--green);
 }
